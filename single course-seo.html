@@ -4,9 +4,8 @@
   <meta charset="UTF-8">
   <title>SEO & Content Strategy | ANGA Mastery</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="เรียนรู้การวางกลยุทธ์ SEO และการสร้างคอนเทนต์ให้ติดอันดับ Google อย่างยั่งยืน">
+  <meta name="description" content="เรียนรู้กลยุทธ์ SEO และการวางแผนคอนเทนต์ให้ติดอันดับ Google อย่างยั่งยืน">
   <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet">
-
   <style>
     body {
       margin: 0;
@@ -14,7 +13,6 @@
       background-color: #fafafa;
       color: #222;
     }
-
     header.course-hero {
       background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), 
         url('https://angamastery.co.th/wp-content/uploads/2023/10/seo-content-course.webp') center/cover no-repeat;
@@ -22,53 +20,22 @@
       padding: 100px 20px 60px;
       text-align: center;
     }
-
     header.course-hero h1 {
       font-size: 2.5rem;
-      margin-bottom: 10px;
     }
-
-    header.course-hero p {
-      font-size: 1.2rem;
-      opacity: 0.9;
-    }
-
     .course-container {
       max-width: 1000px;
       margin: 40px auto;
-      padding: 0 20px;
+      padding: 30px;
       background: #fff;
       border-radius: 12px;
       box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
-
-    .course-content {
-      padding: 30px;
-    }
-
-    .course-content h2 {
-      font-size: 1.5rem;
+    h2 {
       color: #ff5300;
-      margin-top: 30px;
     }
-
-    .course-content p, .course-content li {
-      font-size: 1rem;
-      line-height: 1.7;
-      color: #444;
-    }
-
-    .course-content ul {
-      padding-left: 20px;
-    }
-
-    .cta-actions {
-      margin-top: 40px;
-      display: flex;
-      justify-content: center;
-    }
-
     .add-to-cart-btn {
+      margin-top: 30px;
       background-color: #ff5300;
       color: white;
       font-size: 1.1rem;
@@ -78,51 +45,38 @@
       cursor: pointer;
       transition: background 0.2s;
       text-decoration: none;
-      text-align: center;
       display: inline-block;
     }
-
     .add-to-cart-btn:hover {
       background-color: #e64a00;
     }
-
-    @media (max-width: 768px) {
-      header.course-hero h1 {
-        font-size: 2rem;
-      }
-
-      .add-to-cart-btn {
-        width: 90%;
-      }
-    }
   </style>
 </head>
-
 <body>
 
   <header class="course-hero">
     <h1>SEO & Content Strategy</h1>
-    <p>ปั้นเนื้อหาให้ติดหน้าแรก Google ด้วยกลยุทธ์ที่ใช้ได้จริง</p>
+    <p>ปั้นคอนเทนต์ให้ติดอันดับ Google แบบยั่งยืน</p>
   </header>
 
   <div class="course-container">
-    <div class="course-content">
-      <h2>เกี่ยวกับคอร์สนี้</h2>
-      <p>คอร์ส SEO & Content Strategy จะช่วยให้คุณเข้าใจโครงสร้างเว็บไซต์ การวิเคราะห์คำค้น และการสร้างคอนเทนต์ที่มีคุณค่าและติดอันดับบน Google ได้จริง โดยมีเครื่องมือและเทคนิคที่ใช้ได้กับทุกธุรกิจ</p>
+    <h2>รายละเอียดคอร์ส</h2>
+    <p>เรียนรู้การวางกลยุทธ์ SEO และการสร้างเนื้อหาให้มีคุณค่า พร้อมเทคนิควิเคราะห์ keyword และโครงสร้างเว็บแบบมืออาชีพ</p>
+    <ul>
+      <li>วิเคราะห์ keyword อย่างแม่นยำ</li>
+      <li>เขียนบทความให้ติดอันดับ</li>
+      <li>ใช้เครื่องมือ SEO ระดับสากล</li>
+    </ul>
 
-      <h2>สิ่งที่คุณจะได้เรียนรู้</h2>
-      <ul>
-        <li>การวางแผน SEO ตั้งแต่พื้นฐานจนถึง Technical</li>
-        <li>การหา Keyword ด้วยเครื่องมือระดับมืออาชีพ</li>
-        <li>การเขียนคอนเทนต์ให้ติดอันดับ และวัดผลได้</li>
-        <li>การปรับโครงสร้างเว็บให้ Google รู้จัก</li>
-      </ul>
-
-      <div class="cta-actions">
-        <a class="add-to-cart-btn" href="begincheckout.html">เพิ่มลงตะกร้า</a>
-      </div>
-    </div>
+    <a href="begincheckout.html" class="add-to-cart-btn" onclick="setCourseSEO()">เพิ่มลงตะกร้า</a>
   </div>
+
+  <script>
+    function setCourseSEO() {
+      localStorage.setItem("courseTitle", "SEO & Content Strategy");
+      localStorage.setItem("coursePrice", "24,900 THB");
+    }
+  </script>
 
 </body>
 </html>
