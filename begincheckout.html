@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>สรุปรายการในตะกร้า | ANGA Mastery</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet">
 
   <style>
     body {
@@ -49,7 +49,8 @@
       border: none;
       border-radius: 8px;
       margin-top: 30px;
-      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
       transition: background 0.2s;
     }
 
@@ -74,15 +75,8 @@
       <p><strong>Course Price:</strong> 12,900 THB</p>
     </div>
 
-    <button class="btn-checkout" onclick="goToNext()">Begin Checkout</button>
+    <a href="/checkout-step1.html" class="btn-checkout">Begin Checkout</a>
   </div>
 
-  <script>
-    function goToNext() {
-      alert("กำลังไปยังขั้นตอนถัดไป...");
-      // เปลี่ยนไปหน้า checkout step 1 ได้ที่นี่
-      // เช่น window.location.href = 'checkout-step1.html';
-    }
-  </script>
 </body>
 </html>
