@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <title>Browse Courses | ANGA Mastery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="รวมคอร์สเรียนของ ANGA Mastery ทั้งหมด">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Prompt', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .browse-header {
+      padding: 40px 20px;
+      text-align: center;
+      background: #ffffff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .browse-header h1 {
+      font-size: 2rem;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    .course-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .course-card {
+      width: 300px;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    }
+
+    .course-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .course-info {
+      padding: 20px;
+    }
+
+    .course-info h3 {
+      font-size: 1.2rem;
+      margin: 0 0 10px;
+      font-weight: 600;
+    }
+
+    .course-info p {
+      font-size: 0.95rem;
+      color: #666;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .course-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="browse-header">
+    <h1>คอร์สเรียนทั้งหมด</h1>
+  </header>
+
+  <section class="course-grid" id="courseGrid">
+    <!-- คอร์สจะถูกเพิ่มด้วย JS -->
+  </section>
+
+  <script>
+    const courses = [
+      {
+        title: "Facebook Ads Mastery",
+        description: "เรียนรู้การยิงแอดอย่างมืออาชีพ",
+        image: "https://via.placeholder.com/400x200?text=Facebook+Ads",
+        link: "#"
+      },
+      {
+        title: "Google Ads Pro",
+        description: "เชี่ยวชาญ SEM และ YouTube Ads อย่างมีระบบ",
+        image: "https://via.placeholder.com/400x200?text=Google+Ads",
+        link: "#"
+      },
+      {
+        title: "SEO & Content Strategy",
+        description: "วางคอนเทนต์ให้ติดอันดับ Google อย่างยั่งยืน",
+        image: "https://via.placeholder.com/400x200?text=SEO+Content",
+        link: "#"
+      },
+      {
+        title: "Google Analytics 4",
+        description: "เข้าใจ GA4 ตั้งแต่พื้นฐาน พร้อมวิเคราะห์ข้อมูลธุรกิจ",
+        image: "https://angamastery.co.th/wp-content/uploads/2023/10/google-analytics-4.webp",
+        link: "http://127.0.0.1:5500/single%20course.html"
+      }
+    ];
+
+    const container = document.getElementById("courseGrid");
+
+    courses.forEach(course => {
+      const card = document.createElement("a");
+      card.href = course.link;
+      card.className = "course-card";
+      card.innerHTML = `
+        <img src="${course.image}" alt="${course.title}" />
+        <div class="course-info">
+          <h3>${course.title}</h3>
+          <p>${course.description}</p>
+        </div>
+      `;
+      container.appendChild(card);
+    });
+
+    console.log("✅ Courses loaded:", courses.length);
+  </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>สรุปรายการในตะกร้า | ANGA Mastery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Prompt', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .checkout-container {
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+    }
+
+    .summary {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      padding: 10px 0;
+    }
+
+    .summary strong {
+      color: #ff5300;
+    }
+
+    .btn-checkout {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      background-color: #ff5300;
+      color: white;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 8px;
+      margin-top: 30px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .btn-checkout:hover {
+      background-color: #e64a00;
+    }
+
+    @media (max-width: 500px) {
+      .checkout-container {
+        margin: 30px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="checkout-container">
+    <h1>สรุปรายการในตะกร้า</h1>
+
+    <div class="summary">
+      <p><strong>Course Title:</strong> Google Analytics 4</p>
+      <p><strong>Course Price:</strong> 12,900 THB</p>
+    </div>
+
+    <button class="btn-checkout" onclick="goToNext()">Begin Checkout</button>
+  </div>
+
+  <script>
+    function goToNext() {
+      alert("กำลังไปยังขั้นตอนถัดไป...");
+      // เปลี่ยนไปหน้า checkout step 1 ได้ที่นี่
+      // เช่น window.location.href = 'checkout-step1.html';
+    }
+  </script>
+</body>
+</html>
