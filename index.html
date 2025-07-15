@@ -4,12 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ANGA Mastery | Home</title>
-  <meta name="description" content="ANGA Mastery สถาบันสอนการตลาดดิจิทัลที่เน้นลงมือทำจริง" />
+  <meta name="description" content="คอร์สเรียน SEO และ GA4 จากผู้เชี่ยวชาญ เน้นลงมือทำจริง">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700&display=swap" rel="stylesheet">
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
   <style>
     body {
@@ -20,7 +18,7 @@
     }
 
     .hero {
-      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), 
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
         url('https://angamastery.co.th/wp-content/uploads/2023/09/cover-home.webp') center/cover no-repeat;
       color: white;
       padding: 120px 20px;
@@ -28,7 +26,7 @@
     }
 
     .hero h1 {
-      font-size: 2.8rem;
+      font-size: 2.5rem;
       margin-bottom: 1rem;
     }
 
@@ -41,7 +39,7 @@
       background-color: #ff5300;
       color: white;
       padding: 14px 28px;
-      border-radius: 5px;
+      border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
     }
@@ -75,11 +73,26 @@
       padding: 30px;
       max-width: 300px;
       flex: 1;
+      text-align: left;
     }
 
-    .feature-card i {
+    .feature-card h3 {
       color: #ff5300;
-      margin-bottom: 10px;
+      margin-top: 0;
+    }
+
+    .feature-card h3 a {
+      text-decoration: none;
+      color: #ff5300;
+    }
+
+    .feature-card h3 a:hover {
+      text-decoration: underline;
+    }
+
+    .feature-card p {
+      font-size: 0.95rem;
+      color: #555;
     }
 
     footer {
@@ -90,44 +103,35 @@
     }
 
     @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2rem;
-      }
       .feature-grid {
         flex-direction: column;
         align-items: center;
       }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
-
 <body>
 
   <header class="hero">
-    <div class="hero-content">
-      <h1>เรียนรู้การตลาดดิจิทัลอย่างเข้มข้น</h1>
-      <p>เน้นลงมือทำจริง พร้อมทีมที่ปรึกษาคอยดูแลคุณตลอดเส้นทาง</p>
-      <a href="/coursecategory.html" class="cta-button">ดูคอร์สเรียน</a>
-    </div>
+    <h1>คอร์สเรียนการตลาดดิจิทัลที่เน้นผลลัพธ์</h1>
+    <p>สอนโดยผู้เชี่ยวชาญ พร้อมลงมือทำจริง ทั้ง SEO และ GA4</p>
+    <a href="browse.html" class="cta-button">ดูคอร์สเรียน</a>
   </header>
 
-  <section class="features" id="courses">
+  <section class="features">
     <h2>คอร์สยอดนิยม</h2>
     <div class="feature-grid">
       <div class="feature-card">
-        <i class="fas fa-bullhorn fa-2x"></i>
-        <h3>Facebook Ads</h3>
-        <p>เข้าใจกลยุทธ์ยิงโฆษณาอย่างมืออาชีพ พร้อมลงมือทำจริง</p>
+        <h3><a href="course-detail-seo.html">SEO & Content Strategy</a></h3>
+        <p>เรียนรู้การวางแผนคอนเทนต์ + กลยุทธ์ SEO ที่ทำให้เว็บไซต์ติดอันดับ Google อย่างยั่งยืน</p>
       </div>
       <div class="feature-card">
-        <i class="fas fa-search-dollar fa-2x"></i>
-        <h3>Google Ads</h3>
-        <p>เรียนรู้การสร้างแคมเปญ SEM & YouTube Ads อย่างมีประสิทธิภาพ</p>
-      </div>
-      <div class="feature-card">
-        <i class="fas fa-chart-line fa-2x"></i>
-        <h3>SEO & Content</h3>
-        <p>วางกลยุทธ์คอนเทนต์ให้ติดอันดับ Google ด้วยเทคนิคที่พิสูจน์แล้ว</p>
+        <h3><a href="course-detail-ga4.html">Google Analytics 4</a></h3>
+        <p>วิเคราะห์ข้อมูลผู้ใช้งานเว็บและแอปอย่างแม่นยำด้วย GA4 ตั้งแต่พื้นฐานถึงมืออาชีพ</p>
       </div>
     </div>
   </section>
@@ -136,8 +140,5 @@
     <p>&copy; 2025 ANGA Mastery. All rights reserved.</p>
   </footer>
 
-  <script>
-    console.log("ANGA Mastery homepage loaded");
-  </script>
 </body>
 </html>
