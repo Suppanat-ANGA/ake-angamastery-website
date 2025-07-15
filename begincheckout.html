@@ -2,81 +2,61 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8">
-  <title>สรุปรายการในตะกร้า | ANGA Mastery</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet">
-
+  <title>Begin Checkout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     body {
-      margin: 0;
       font-family: 'Prompt', sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
+      background-color: #f7f7f7;
+      padding: 50px;
     }
-
-    .checkout-container {
+    .checkout-box {
+      background: #fff;
       max-width: 600px;
-      margin: 60px auto;
+      margin: auto;
       padding: 30px;
-      background: white;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
-
     h1 {
-      text-align: center;
-      font-size: 1.8rem;
-      margin-bottom: 30px;
-    }
-
-    .summary {
-      font-size: 1.1rem;
-      line-height: 1.8;
-      padding: 10px 0;
-    }
-
-    .summary strong {
       color: #ff5300;
+      font-size: 1.6rem;
     }
-
+    p {
+      font-size: 1.1rem;
+    }
     .btn-checkout {
-      display: block;
-      width: 100%;
-      padding: 14px;
+      margin-top: 30px;
+      padding: 12px 24px;
       background-color: #ff5300;
       color: white;
-      font-size: 1.1rem;
       border: none;
-      border-radius: 8px;
-      margin-top: 30px;
-      text-align: center;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
       text-decoration: none;
-      transition: background 0.2s;
-    }
-
-    .btn-checkout:hover {
-      background-color: #e64a00;
-    }
-
-    @media (max-width: 500px) {
-      .checkout-container {
-        margin: 30px 16px;
-      }
+      display: inline-block;
     }
   </style>
 </head>
 <body>
 
-  <div class="checkout-container">
-    <h1>สรุปรายการในตะกร้า</h1>
+  <div class="checkout-box">
+    <h1>สรุปยอดก่อนชำระเงิน</h1>
+    <p id="courseTitle">Course Title: -</p>
+    <p id="coursePrice">Course Price: -</p>
 
-    <div class="summary">
-      <p><strong>Course Title:</strong> Google Analytics 4</p>
-      <p><strong>Course Price:</strong> 12,900 THB</p>
-    </div>
-
-    <a href="/checkout-step1.html" class="btn-checkout">Begin Checkout</a>
+    <a class="btn-checkout" href="checkout-step1.html">Begin Checkout</a>
   </div>
+
+  <script>
+    // ดึงข้อมูลจาก localStorage
+    document.getElementById("courseTitle").textContent =
+      "Course Title: " + (localStorage.getItem("courseTitle") || "-");
+
+    document.getElementById("coursePrice").textContent =
+      "Course Price: " + (localStorage.getItem("coursePrice") || "-");
+  </script>
 
 </body>
 </html>
