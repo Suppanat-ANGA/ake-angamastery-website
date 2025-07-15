@@ -56,8 +56,6 @@
       cursor: pointer;
       transition: background 0.2s;
       text-align: center;
-      text-decoration: none;
-      display: inline-block;
     }
 
     .btn-next:hover {
@@ -76,7 +74,7 @@
 
   <div class="container">
     <h1>ข้อมูลผู้สมัครเรียน</h1>
-    <form id="checkoutForm" action="/checkout-step2/" method="GET">
+    <form action="checkout-step2.html" method="get">
       <label for="firstName">First Name</label>
       <input type="text" id="firstName" name="firstName" required>
 
@@ -106,7 +104,6 @@
       <label for="linkedin">LinkedIn Profile</label>
       <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/your-profile" required>
 
-      <!-- ปุ่ม "ถัดไป" -->
       <button type="submit" class="btn-next">ถัดไป</button>
     </form>
   </div>
